@@ -21,7 +21,7 @@ public:
 		int n = str.size();
 		SA = vector<int>(n);
 		for (int i = 0; i < n; i++) SA[i] = i;
-		sort(SA.begin(), SA.end(), [&](int i, int j){return str[i] < str[j]; });
+		sort(SA.begin(), SA.end(), [&](int i, int j){ return str[i] < str[j]; });
 
 		vector<int> bucket(n), tmp(n), bucket_cnt(n), tmp_bucket(n);
 		int t = 0;
