@@ -3,6 +3,15 @@
 #include<vector>
 using namespace std;
 
+/*
+Verify: http://www.spoj.com/problems/SARRAY/
+Complexity: O(nlogn)
+Usage:
+	SuffixArray(Ty* s, int size);
+	SuffixArray::process();
+	SuffixArray::SA;
+*/
+
 template<typename Ty>
 class SuffixArray{
 public:
