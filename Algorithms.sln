@@ -3,8 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "string", "string", "{7D3ADE10-D6FE-4ED8-983E-AA96290D83F3}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "suffix_array", "string\suffix_array\suffix_array.vcxproj", "{ED5DDCFB-7A3A-42DD-B660-E09508F162BC}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ED5DDCFB-7A3A-42DD-B660-E09508F162BC}.Debug|Win32.ActiveCfg = Debug|Win32
+		{ED5DDCFB-7A3A-42DD-B660-E09508F162BC}.Debug|Win32.Build.0 = Debug|Win32
+		{ED5DDCFB-7A3A-42DD-B660-E09508F162BC}.Release|Win32.ActiveCfg = Release|Win32
+		{ED5DDCFB-7A3A-42DD-B660-E09508F162BC}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{ED5DDCFB-7A3A-42DD-B660-E09508F162BC} = {7D3ADE10-D6FE-4ED8-983E-AA96290D83F3}
 	EndGlobalSection
 EndGlobal
