@@ -1,6 +1,15 @@
 #include<vector>
 using namespace std;
 
+/*
+Verify: https://www.acmicpc.net/problem/9248
+Complexity: O(n)
+Usage:
+    LCP(const vector<Ty> &str, const vector<int> &suffix_array)
+    LCP::process();
+    LCP::LCP;
+ */
+
 template <typename Ty>
 class LCP{
 public:
