@@ -22,13 +22,9 @@ public:
 		for (int i = 0; i < size; i++) str[i] = s[i];
 	}
 
-	bool cmp(int i, int j){
-		return str[i] < str[j];
-	}
-
 	void process(){
 		int n = str.size();
-		SA = vector<int>(n);
+		SA.resize(n);
 		for (int i = 0; i < n; i++) SA[i] = i;
 		sort(SA.begin(), SA.end(), [&](int i, int j){ return str[i] < str[j]; });
 
