@@ -7,7 +7,7 @@ Complexity: O(n)
 Usage:
     LCP(const vector<Ty> &str, const vector<int> &suffix_array)
     LCP::process();
-    LCP::LCP;
+    LCP::lcp;
  */
 
 template <typename Ty>
