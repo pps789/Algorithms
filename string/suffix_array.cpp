@@ -59,15 +59,3 @@ public:
 		}
 	}
 };
-
-#include<cstdio>
-char buff[111111];
-
-int main(){
-	scanf("%s", buff);
-	int n = strlen(buff);
-	SuffixArray<char> sa(buff, n);
-
-	sa.process();
-	for (int i = 0; i < n; i++) printf("%d\n", sa.SA[i]);
-}

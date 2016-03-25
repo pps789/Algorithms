@@ -5,23 +5,24 @@ using namespace std;
 Verify: https://www.acmicpc.net/problem/9248
 Complexity: O(n)
 Usage:
-    LCP(const vector<Ty> &str, const vector<int> &suffix_array)
-    LCP::process();
-    LCP::lcp;
+    Longest_Common_Prefix(const SuffixArray &suffix_array)
+    Longest_Common_Prefix::process();
+    Longest_Common_Prefix::LCP;
  */
 
 template <typename Ty>
-class LCP{
+class Longest_Common_Prefix{
 public:
     const vector<int> &sa;
     const vector<Ty> &str;
-    vector<int> lcp;
+    vector<int> LCP;
 
-    LCP(const vector<Ty> &_str, const vector<int> &_sa): str(_str), sa(_sa) {}
+	Longest_Common_Prefix
+		(const SuffixArray &_sa) : sa(_sa.SA), str(_sa.str) {}
 
     void process(){
         int n = sa.size();
-        lcp.resize(n);
+		LCP.resize(n);
         vector<int> sa_inv(n);
 
         for(int i = 0; i < n; i++)
@@ -32,7 +33,7 @@ public:
             if(sa_inv[i] > 0){
                 int j = sa[sa_inv[i] - 1];
                 while(i + l < n && j + l < n && str[i + l] == str[j + l]) l++;
-                lcp[sa_inv[i]] = l;
+				LCP[sa_inv[i]] = l;
                 if(l > 0) l--;
             }
         }
