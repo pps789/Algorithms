@@ -33,14 +33,11 @@ public:
 		int ret = lowlink[v] = ++vCount;
 		st.push(v);
 
-		for (int u : g[v]){
-			if (lowlink[u] == -1){
+		for (int u : g[v])
+			if (lowlink[u] == -1)
 				ret = min(ret, dfs(u));
-			}
-			else if (scc[u] == -1){
+			else if (scc[u] == -1)
 				ret = min(ret, lowlink[u]);
-			}
-		}
 
 		if (ret == lowlink[v]){
 			++sccCount;
