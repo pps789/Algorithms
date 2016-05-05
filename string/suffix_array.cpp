@@ -17,10 +17,8 @@ class SuffixArray{
 public:
 	vector<Ty> str;
 	vector<int> SA;
-	SuffixArray(const Ty* s, int size){
-		str = vector<Ty>(size);
-		for (int i = 0; i < size; i++) str[i] = s[i];
-	}
+	SuffixArray
+		(const Ty* s, int size) : str(s, s + size){}
 
 	void process(){
 		int n = str.size();

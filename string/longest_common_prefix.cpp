@@ -11,13 +11,13 @@ Usage:
  */
 
 template <typename Ty>
-class Longest_Common_Prefix{
+class LongestCommonPrefix{
 public:
     const vector<int> &sa;
     const vector<Ty> &str;
     vector<int> LCP;
 
-	Longest_Common_Prefix
+	LongestCommonPrefix
 		(const SuffixArray &_sa) : sa(_sa.SA), str(_sa.str) {}
 
     void process(){
